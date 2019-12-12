@@ -1,0 +1,634 @@
+/*body{
+    background-color: white;
+    margin: auto;
+    padding-bottom: 2%;
+  }
+  .container {
+      display: grid;
+      max-width: 10000px;
+      min-width: 100px;
+      position: relative;
+      margin-right: 3%;
+      margin-left: 3%;
+      margin-top: 1%;
+      margin-bottom: 4%;
+      grid-template-areas: 
+        "hd hd sd sd sd"
+        "hd hd sd sd sd"
+        "left left left right right"
+        "space space space right right"
+        "yelp yelp yelp right right"
+        "right1 right1 left1 left1 left1"
+        "right1 right1 left1 left1 left1"
+        "right1 right1 left1 left1 left1";
+        grid-gap: 1.5%;
+      grid-template-rows: 30px 40px 80px 33px 70px 50px 150px 50px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: stretch;   
+  }
+  .sidebar{
+    grid-area: sd;
+    background-color: white;
+    color: gray;
+    display: fixed;
+    flex-direction: row;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: end;
+    padding-top: 2%;
+    word-spacing: 10px;
+    float: right;
+    letter-spacing: 1.5px;
+    padding-bottom: 4%;
+    margin-top: 3%;
+}
+    ul .li{
+     display: inline;
+     padding-top: 1%;
+     color: gray;
+     text-decoration: none;
+     color: gray;
+}
+    li{
+     display: inline;
+}
+    .z{
+     text-decoration: none;
+     color:gray;
+}
+    .z:hover{
+    cursor: pointer;
+    color: lightgrey;
+}
+    .z:visited{
+      text-decoration: none;
+      color: gray;
+  }
+.welcome{
+    grid-area: hd;
+    background-color: white;
+    display: flex;
+    float: left;
+    padding-top: 6%;
+    padding-left: 15px;
+    padding-bottom: 0%;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1.5px;
+    font-size: 28px;
+    line-height: 12px;
+    color: gray;
+    margin-top: 5%;
+  }
+
+.soccer{
+    font-family: 'Cormorant Garamond', serif;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: left;
+    justify-content: flex-start;
+    height: 100px;
+    padding-bottom: 3.5%;
+    width: 300px;
+    padding-right: 30px;
+}
+.soccer a:visited{
+    text-decoration: none;
+    color: gray;
+}
+.soccer a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left;
+    font-size: 65px;
+    padding-top: 9%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 17.3%;
+}
+.soccer:hover {
+    grid-auto-flow: dense;
+    transition: 1s ease;
+    width: 300px;
+    animation: stretch 1s ease;
+    animation-fill-mode: forwards;
+    justify-content: flex-start;
+}
+@keyframes stretch{
+    to{
+      width: 450px; 
+      padding-left: 15px;
+    } 
+}
+.soccer:hover a{
+    font-size: 55px;
+    transition: font-size 1s ease;
+}
+.soccer:hover + .rps {
+    grid-auto-flow: dense;
+    transition: 1s ease;
+    width: 600px;
+    animation: grow 1s ease;
+    left: 200%;
+    animation-fill-mode: forwards; 
+}
+@keyframes grow{
+    to{
+      width: 400px;
+      left: 70%;
+      margin-left: 70%;
+    }
+  }
+.soccer:hover + .rps a {
+    font-size: 45px;
+    transition: font-size 1s ease;
+}
+.rps {
+    font-family: 'Cormorant Garamond', serif;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: left;
+    justify-content: flex-start;
+    margin-left: 47.4%;
+    height: 125px;
+    width: 600px;
+}
+.rps a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left;
+    font-size: 65px; 
+    margin-top: 8%;
+}
+.rps:hover {
+    grid-auto-flow: dense;
+    transition: 1s ease;
+    width: 600px;
+    animation: stretch1 1s ease;
+    animation-fill-mode: forwards;
+    margin-left: 48%;
+    justify-content: flex-start;
+} 
+
+@keyframes stretch1 {
+    to{
+      width: 750px;
+      margin-left: 28%;
+    } 
+}
+.rps:hover a{
+    font-size: 67px;
+    transition: font-size 1s ease;
+}
+/*.rps:hover + .soccer {
+    grid-auto-flow: dense;
+    transition: 1s ease;
+    width: 300px;
+    animation: transform 1s ease;
+    animation-fill-mode: forwards; 
+    padding-bottom: 3.5%;
+   padding-right:30px;
+}
+@keyframes transform {
+    to{
+      width: 100px;
+      margin-right: 800px;
+      padding-right: 0px;
+    }
+  }
+  .rps:hover a + .soccer a{
+    grid-auto-flow: dense;
+    transition: 1s ease;
+    width: 300px;
+    animation: bleh 1s ease;
+    animation-fill-mode: forwards; 
+    padding-bottom: 3.5%;
+    padding-right:30px; 
+  }
+  @keyframes bleh {
+    to{
+      width: 1px;
+      margin-right: 800px;
+      padding-right: 0px;
+    }
+}
+.rps:hover + .soccer a{
+    font-size: 50px;
+    transition: font-size 1s ease;
+    margin-left: 10%;
+}
+.rps:visited a{
+    text-decoration: none;
+    color: gray;
+}
+.yelp {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: yelp;
+    justify-content: start;
+    height: 80px;
+    width: 500px;
+    padding-top: 8%;
+    margin-top: 1%;
+
+}
+.yelp a:visited{
+    text-decoration: none;
+    color: grey;
+}
+.yelp a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left;
+    font-size: 65px;
+    justify-content: start;
+    padding-top: 3.8%;
+    padding-bottom: 3%;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+
+.yelp:hover {
+    grid-auto-flow: dense;
+    transition: 1s ease;
+    width: 500px;
+    animation: bark 1s ease;
+    animation-fill-mode: forwards;
+    justify-content: start;
+}
+@keyframes bark {
+    to{
+      width: 650px; 
+      padding-left: 20px;
+    } 
+}
+.yelp:hover a{
+    font-size: 55px;
+    transition: font-size 1s ease;
+}
+
+.fb {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: right;
+    justify-content: start;
+    height: 80px;
+    width: 300px;
+    padding-top: 5px;
+    margin-top: 29%;
+}
+.fb a:visited{
+    text-decoration: none;
+    color: grey;
+}
+.fb a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left;
+    font-size: 40px;
+    justify-content: start;
+    padding-top: 5px;
+}
+
+.fb:hover {
+    grid-auto-flow: dense;
+    transition: 1s ease;
+    width: 100px;
+    animation: bark 1s ease;
+    animation-fill-mode: forwards;
+    justify-content: start;
+}
+@keyframes bark {
+    to{
+      width: 90px; 
+     
+    } 
+}
+.fb:hover a{
+    font-size: 30px;
+    transition: font-size 1s ease;
+}
+*/
+@media only screen and (max-width: 5600px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        display: grid;
+        max-width: 6250rem;
+        min-width: 5.25rem;
+        position: relative;
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-top: 1%;
+        margin-bottom: 4%;
+        grid-template-areas: 
+          "hd hd sd sd sd"
+          "hd hd sd sd sd"
+          "left left right right right"
+          "left left right right right"
+          "yelp yelp yelp idk idk"
+          "yelp yelp yelp idk idk"
+          "right1 right1 left1 left1 left1"
+          "right1 right1 left1 left1 left1"
+          "r r r r r";
+        row-gap: 1.8%;
+        column-gap: 0.5%;  
+        grid-template-rows: 25% 25% repeat(7, 45%);
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: stretch;   
+    }
+    .project {
+        animation: fadein 2s;
+    }
+    @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 2; }
+    }
+    @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    }
+    .sidebar{
+      grid-area: sd;
+      background-color: white;
+      color: gray;
+      display: fixed;
+      flex-direction: row;
+      font-family: 'Cormorant Garamond', serif;
+      text-align: end;
+      padding-top: 2%;
+      word-spacing: 0.625rem;
+      float: right;
+      letter-spacing: 0.09375rem;
+      padding-bottom: 4%;
+      margin-top: 3%;
+  }
+  ul .li{
+    display: inline;
+    padding-top: 1%;
+    color: gray;
+    text-decoration: none;
+    color: gray;
+}
+   li{
+    display: inline;
+}
+   .z{
+    text-decoration: none;
+    color:gray;
+}
+   .z:hover{
+   cursor: pointer;
+}
+   .z:visited{
+     text-decoration: none;
+     color: gray;
+ }
+.welcome{
+   grid-area: hd;
+   background-color: white;
+   display: flex;
+   float: left;
+   padding-top: 3.5rem;
+   padding-left: 0.9375rem;
+   padding-bottom: 0rem;
+   font-family: 'Cormorant Garamond', serif;
+   letter-spacing: 0.09375rem;
+   font-size: 1.75rem;
+   line-height: 1.75rem;
+   color: gray;
+   }
+
+ .soccer{
+    font-family: 'Cormorant Garamond', serif;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: left;
+    justify-content: flex-start; 
+    font-size: 2rem;
+    padding-left: 1rem;  
+}
+
+
+.soccer a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left; 
+}
+.soccer:hover a{
+    font-size: 2.5rem;
+    transition: font-size 1s ease;
+    padding-left: 0rem;
+}
+.soccer a:visited{
+    text-decoration: none;
+    color: gray;
+}
+
+.rps {
+    font-family: 'Cormorant Garamond', serif;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: right;
+    justify-content: flex-start;
+    font-size: 2rem;
+}
+.rps a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left;
+    font-size: 2rem;
+}
+.rps:hover a{
+    font-size: 2.5rem;
+    transition: font-size 1s ease;
+    padding-left: 0rem;
+}
+/*.rps:hover {
+    grid-auto-flow: dense;
+    transition: 1s ease;
+    width: 100%;
+    animation: stretchy 1s ease;
+    animation-fill-mode: backwards;
+    justify-content: flex-start;
+}
+@keyframes stretchy {
+    to{
+     width: 160%;
+    } 
+}*/
+
+.rps:visited a{
+    text-decoration: none;
+    color: gray;
+}
+.yelp {
+    font-family: 'Cormorant Garamond', serif;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: yelp;
+    justify-content: start;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+.yelp a:visited{
+    text-decoration: none;
+    color: gray;
+}
+.yelp a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left;
+    justify-content: start;
+
+}
+.yelp:hover a{
+    font-size: 2.5rem;
+    transition: font-size 1s ease;
+    padding-left: 0rem;
+}
+/*
+.yelp:hover {
+    grid-auto-flow: dense;
+    transition: 1s ease;
+    width: 31.25rem;
+    animation: bark 1s ease;
+    animation-fill-mode: forwards;
+    justify-content: start;
+}
+@keyframes bark {
+    to{
+      width: 40.625rem; 
+      
+    } 
+}
+.yelp:hover a{
+    font-size: 3.4375rem;
+    transition: font-size 1s ease;
+}
+*/
+.fb {
+    font-family: 'Cormorant Garamond', serif;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: idk;
+    justify-content: start;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+.fb a:visited{
+    text-decoration: none;
+    color: gray;
+}
+.fb a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left;
+    justify-content: start;
+   
+}
+.fb:hover a{
+    font-size: 2.5rem;
+    transition: font-size 1s ease;
+    padding-left: 0rem;
+}
+/*
+.fb:hover {
+    grid-auto-flow: dense;
+    transition: 1s ease;
+   
+    animation: bark 1s ease;
+    animation-fill-mode: forwards;
+    justify-content: start;
+}
+@keyframes bark {
+    to{
+      width: 2.625rem; 
+     
+    } 
+}
+.fb:hover a{
+    font-size: 1.875rem;
+    transition: font-size 1s ease;
+}
+}
+*/
+
+.oyt {
+    font-family: 'Cormorant Garamond', serif;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: right1;
+    justify-content: flex-start; 
+    font-size: 2rem;
+    padding-left: 1rem;  
+    margin-bottom: 1rem;
+}
+.oyt:hover a{
+    font-size: 2.5rem;
+    transition: font-size 1s ease;
+    padding-left: 0rem;
+}
+
+.oyt a:hover {
+    text-decoration: none;
+    color: gray;
+}
+.oyt a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left;
+    justify-content: start;
+}
+
+.rd {
+    font-family: 'Cormorant Garamond', serif;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: left1;
+    justify-content: flex-start; 
+    font-size: 2rem;
+    padding-left: 1rem;  
+    margin-bottom: 1rem;
+}
+.rd a:hover {
+    text-decoration: none;
+    color: gray;
+}
+.rd a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left;
+    justify-content: start;
+}
+.rd:hover a{
+    font-size: 2.5rem;
+    transition: font-size 1s ease;
+    padding-left: 0rem;
+}
+
+}

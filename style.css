@@ -1,0 +1,309 @@
+@media only screen and (max-width: 5600px) {
+  body {
+      font-size: 16px;
+      background-color: white;
+      margin: auto;
+      padding-bottom: 2%;
+  }
+.container {
+  display: grid;
+  max-width: 6250rem;
+  min-width: 0.25rem;
+  position: relative;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-top: 1%;
+  margin-bottom: 6rem;
+  grid-template-areas:  
+      "hd hd sd sd sd"
+      "hd hd sd sd sd"
+      "left left left right right"
+      "left left left right right"
+      "left left left right right"
+      "botleft botleft botright botright botright"
+      "botleft botleft botright botright botright"
+      "botleft botleft botright botright botright";
+      row-gap: 1.88%;
+      column-gap: 1.5%;  
+      grid-template-rows: 5% 5% repeat(7, 12%);
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      justify-content: stretch;    
+  }
+.welcome{
+  grid-area: hd;
+  background-color: white;
+  display: flex;
+  float: left;
+  padding-top: 6%;
+  padding-left: 0.9375rem;
+  padding-bottom: 4.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.09375rem;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  color: gray;
+  margin-top: 5%;
+  margin-bottom: 10.5rem;
+}
+
+.sidebar {
+  grid-area: sd;
+  background-color: white;
+  color: gray;
+  display: fixed;
+  flex-direction: row;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: end;
+  padding-top: 2%;
+  word-spacing: 0.625rem;
+  float: right;
+  letter-spacing: 0.09375rem;
+  padding-bottom: 4%;
+  margin-top: 3%;
+}
+  ul .li{
+  display: inline;
+  padding-top: 1%;
+  color: gray;
+  text-decoration: none;
+  color: gray;
+  }
+  li{
+      display: inline;
+
+  }
+  .z{
+      text-decoration: none;
+      color:gray;
+  }
+  .z:hover{
+      cursor: pointer;
+      color: lightgrey;
+      }
+  .z:visited{
+        text-decoration: none;
+        color: gray;
+  }
+
+
+.left{
+  grid-area: left;
+  background-color: whitesmoke;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: left;
+  font-size: 1.125rem;
+  color: gray;
+  grid-auto-flow: dense;
+  transition: background-color 1s ease;
+  width: 0;
+  animation: grow 3s ease;
+  left: 45%;
+  animation-fill-mode: forwards;
+  padding-bottom: 0.5%;
+}
+  @keyframes grow{
+    to{
+      width: 725px;
+    }
+  }
+.left:hover{
+    background-color: linen; 
+}
+.left h1{
+  text-align: end;
+  padding-left: 36%;
+  padding-right: 2%;
+  padding-top: 12rem;
+  padding-bottom: 0.5%;
+  color: gray;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  letter-spacing: 0.625rem;
+  line-height: 2.8rem;
+}
+.aabout{
+  text-decoration: none;
+  color: lightgrey;
+}
+aabout:visited{
+  text-decoration: none;
+  color: gray;
+}
+aabout:link{
+  text-decoration: none;
+  color: gray;
+}
+
+.right{
+  grid-area: right;
+  background-color: linen;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: left;
+  font-size: 2rem;
+  color: gray;
+  grid-auto-flow: dense;
+  transition: background-color 1s ease;
+  padding-right: 5.4%;
+  width: 0;
+  animation: transform 3s ease;
+  right: 30%;
+  animation-fill-mode: forwards;
+}
+  @keyframes transform{
+    to{
+        width: 460px;
+    }
+  }
+.right:hover{
+  background-color: whitesmoke;
+}
+
+.botleft{
+  grid-area: botleft;
+  background-color: linen;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: left;
+  padding-top: 1.25rem;
+  padding-left: 0.9375rem;
+  font-size: 1.125rem;
+  color: gray;
+  grid-auto-flow: dense;
+  transition: background-color 1s ease;
+  width: 0;
+  animation: fill 3s ease;
+  left: 70%;
+  animation-fill-mode: forwards;
+}
+  @keyframes fill{
+    to{
+      width: 29rem;
+    }
+  }
+.botleft:hover{
+  background-color: whitesmoke;
+}
+
+.botright{
+  grid-area: botright;
+  background-color: whitesmoke;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: left; 
+  font-size: 1.125rem;
+  color: gray;
+  grid-auto-flow: dense;
+  transition: background-color 1s ease;
+  padding-top: 0.15rem;
+  width: 0;
+  animation: translate 3s ease;
+  right: 70%;
+  animation-fill-mode: forwards;
+  padding-left: 1rem;
+}
+  @keyframes translate{
+      to{
+          width: 720px;
+      }
+  }
+.botright:hover{
+      background-color: linen;
+  }
+.botright h1{
+    display: grid;
+    grid-area: 6 / 2 / 6 / 3;
+    color: lightgrey;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    letter-spacing: 0.625rem;
+    padding-top: 0;
+    margin-top: 0;
+    animation: grow 3s ease;
+    right: 70%;
+    animation-fill-mode: forwards;
+  }
+  
+
+
+
+
+
+
+
+
+/*.okok{
+    width: 400px;
+    height: 267px;
+    border-radius: 2px;
+}
+
+.picture{
+    display: grid;
+    grid-area: 3 / 1 / 4 / 3;
+    padding-top: 10%;
+}
+
+
+.soccer{
+    padding-top: 25%;
+    padding-left: 10%;
+}
+.formpic{
+    width: 325px;
+    height: 245px;
+    border-radius: 10px;
+}
+.form{
+    padding-top: 50%;
+    padding-left: 35%;
+}*/
+
+/* .lizidawz{
+    display: grid;
+    grid-area: 4 / 3 / 5 / 3;
+    font-size: 80px;
+    color: lightgrey;
+    font-family: 'Sarabun', sans-serif;
+    letter-spacing: 0px;
+    line-height: 70%;
+    opacity: 0.5;
+    text-shadow:
+		-1px -1px 0 gray,
+		1px -1px 0 gray,
+		-1px 1px 0 gray,
+        1px 1px 0 gray;
+    padding-top: 2%;
+}
+.dawz{
+    display: grid;
+    grid-area: 4 / 3 / 5 / 3;
+    font-size: 80px;
+    color: lightgrey;
+    font-family: 'Sarabun', sans-serif;
+    letter-spacing: 0px;
+    line-height: 70%;
+    opacity: 0.5;
+    text-shadow:
+		-1px -1px 0 gray,
+		1px -1px 0 gray,
+		-1px 1px 0 gray,
+        1px 1px 0 gray;
+    padding-top: 18%;
+    padding-left: 25%;
+} 
+
+.abme{
+  display: grid;
+  grid-area: 2 / 3 / 5 / 5;
+  font-size: 80px;
+  color: lightgrey;
+  font-family: 'Cormorant Garamond', serif;
+  margin-top: 8%;
+  margin-left: 0%;
+}
+
+.abme p{
+  display: grid;
+  grid-area: 3 / 3 / 5 / 3;
+  font-size: 20px;
+  color: grey;
+  font-family: 'Cormorant Garamond', serif;
+  margin-top: 99%;*/
