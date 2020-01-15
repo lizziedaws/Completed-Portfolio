@@ -261,3 +261,59 @@
 }
 
 }
+.wbwb {
+    font-family: 'Cormorant Garamond', serif;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: r;
+    justify-content: start;
+    font-size: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.wbwb a:hover {
+    text-decoration: none;
+    color: gray;
+}
+.wbwb a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left;
+    justify-content: start;
+}
+.wbwb:hover a{
+    font-size: 2.5rem;
+    transition: font-size 1s ease;
+    padding-left: 0rem;
+}
+
+.nannies {
+    font-family: 'Cormorant Garamond', serif;
+    color: gray;
+    text-decoration: none;
+    background-color: linen;
+    display: grid;
+    grid-area: n;
+    justify-content: start;
+    font-size: 2rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.nannies a:visited{
+    text-decoration: none;
+    color: gray;
+}
+.nannies a{
+    text-decoration: none;
+    color: gray;
+    grid-area: left;
+    justify-content: start;
+   
+}
+.nannies:hover a{
+    font-size: 2.5rem;
+    transition: font-size 1s ease;
+    padding-left: 0rem;
+}
