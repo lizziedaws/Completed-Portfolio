@@ -1,148 +1,124 @@
+html {
+   height: 100%;
+   font-size: 16px;
+}
+body {
+   font-size: 16px;
+   padding-bottom: 2%;
+   width: 100%;
+   height: 100%;
+ }
 .container2 {
-    display: grid;
-    max-width: 10000px;
-    min-width: 320px;
-    position: relative;
-    margin-right: 3%;
-    margin-left: 3%;
-    margin-top: 1%;
-    margin-bottom: 4%;
-    grid-template-areas: 
-      "sd sd sd sd sd"
-      "sd sd sd sd sd"
-      "left left left right right"
-      "left left left right right"
-      "left left left right right"
-      "right1 right1 left1 left1 left1"
-      "right1 right1 left1 left1 left1"
-      "right1 right1 left1 left1 left1";
-      grid-gap: 1%;
-    grid-template-rows: 30px 40px 50px 150px 100px 100px 150px 50px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-content: stretch;
-    background-color: linen;
+ display: grid;
+ max-width: 6250rem;
+ min-width: 5.25rem;
+ height: 100%;
+ position: relative;
+ margin: 2%;
+   grid-template-areas:
+     "left sd"
+     "left right";
+     grid-gap: 1%;
+   grid-template-rows: 0.25fr 1.75fr;
+   grid-template-columns: 0.75fr 1.25fr;
+   justify-content: stretch;
+   background-color: linen;
 }
-
 .sidebar2 {
-    grid-area: sd;
-    background-color: linen;
-    color: gray;
-    display: fixed;
-    flex-direction: row;
-    font-family: 'Cormorant Garamond', serif;
-    text-align: end;
-    padding-top: 2%;
-    word-spacing: 10px;
-    float: right;
-    letter-spacing: 1.5px;
-    padding-bottom: 4%;
-    margin-top: 3%;
-    padding-right: 2%;
-    font-size: 1.3rem;
-  }
-  ul .li{
-    display: inline;
-    padding-top: 1%;
-    color: gray;
-    text-decoration: none;
-    color: gray;
+   grid-area: sd;
+   background-color: linen;
+   color: gray;
+   display: fixed;
+   flex-direction: row;
+   font-family: 'Cormorant Garamond', serif;
+   text-align: end;
+   word-spacing: 0.625rem;
+   float: right;
+   letter-spacing: 0.09375rem;
+   font-size: 1.3rem;
+   margin-right: 2%;
+ }
+ ul .li{
+   display: inline;
+   padding-top: 1%;
+   color: gray;
+   text-decoration: none;
+   color: gray;
 }
-
-li{
-    display: inline;
-
-}
+ li{
+   display: inline;
+ }
 .z{
-    text-decoration: none;
-    color:gray;
+   text-decoration: none;
+   color:gray;
 }
 .z:hover{
-   cursor: pointer;
-   color: lightgrey;
-   }
+  cursor: pointer;
+  color: lightgrey;
+  }
 .z:visited{
-     text-decoration: none;
-     color: gray;
- }
-.okok{
-    width: 400px;
-    height: 267px;
-    border-radius: 2px;
-    display: grid;
-    grid-area: 2 / 1 / 2 / 5;
-    padding-top: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
+    text-decoration: none;
+    color: gray;
 }
 
-.picture{
-   display: grid;
-   grid-area: 1 / 1 / 8 / 2;
-   background-color: #f6e3d1;
-   transition: transform 2s;
-   padding-bottom: 3rem;
+.abme {
+    display: relative;
+    grid-area: right;
+    color: gray;
+    font-family: 'Cormorant Garamond', serif;
+    padding-right: 4%;
+    font-size: 1.5vw;
+    line-height: 1.9em;
 }
-.picture {
-    -webkit-animation: fadein 3s;
+.abme {
+   -webkit-animation: fadein 4s;
 }
 
 @keyframes fadein {
-  from { opacity: 1; }
-  to   { opacity: 2; }
+ from { opacity: 0; }
+ to   { opacity: 1; }
 }
 @-webkit-keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+ from { opacity: 0; }
+ to   { opacity: 1; }
 }
 
-.abme{
-    display: grid;
-    grid-area: 1 / 2 / 5 / 5;
-    font-size: 70px;
-    color: lightgray;
-    font-family: 'Cormorant Garamond', serif;
-    margin-top: 8%;
-  
-  }
-  
-  .abme p{
-    display: grid;
-    grid-area: 1 / 3 / 6 / 4;
-    font-size: 20px;
-    color: grey;
-    font-family: 'Cormorant Garamond', serif;
-    margin-top: 35%;
-    line-height: 1.9rem;
-    text-decoration: none;
-  }
-
-  .abme h1 {
-    -webkit-animation: fadein 4s;
-  }
-
-  @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-  @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-.link{
-    text-decoration: none;
-    font-weight: bold;
-    color: grey;
-    font-style: oblique;
+.abme h1 {
+    font-size: 4vw;
+}
+.abme h1 {
+   -webkit-animation: fadein 4s;
+ }
+ 
+ @keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+ }
+ @-webkit-keyframes fadein {
+   from { opacity: 0; }
+   to   { opacity: 1; }
+ }
+ .link{
+   text-decoration: none;
+   font-weight: bold;
+   color: grey;
+   font-style: oblique;
 }
 .link:visited{
-    text-decoration: none;
-    color: grey;
-    font-style: oblique;
+   text-decoration: none;
+   color: grey;
+   font-style: oblique;
 }
 .special {
-    display: inline!important;
+   
+   font-size: 5vw;
 }
 .link:hover {
-    text-decoration: underline;
+   text-decoration: underline;
+}
+
+.picture {
+   display: grid;
+   grid-area: left;
+   background-color: #f6e3d1;
 }
