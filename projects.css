@@ -260,7 +260,7 @@
     padding-left: 0rem;
 }
 
-}
+
 .wbwb {
     font-family: 'Cormorant Garamond', serif;
     color: gray;
@@ -316,4 +316,5 @@
     font-size: 2.5rem;
     transition: font-size 1s ease;
     padding-left: 0rem;
+}
 }
