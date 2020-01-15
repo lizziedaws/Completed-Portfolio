@@ -24,7 +24,7 @@
           "r r r n n";
         row-gap: 1.8%;
         column-gap: 0.5%;  
-        grid-template-rows: 25% 25% repeat(8, 45%);
+        grid-template-rows: 25% 15% repeat(8, 45%);
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         justify-content: stretch;   
     }
